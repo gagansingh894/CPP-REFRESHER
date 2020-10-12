@@ -14,5 +14,16 @@ int main() {
     cout<<"The size of character is: "<<sizeof(char)<<endl;
     cout<<"The size of long is: "<<sizeof(long)<<endl;
     cout<<"The size of bool is: "<<sizeof(bool)<<endl;
+
+    // Constant Example
+    const int weightGoal = 100;
+    cout<<"Const Variable: "<<weightGoal<<endl;
+
+    // Enum Example
+    enum MONTHS {Jan, Feb, Mar, Apr};
+    MONTHS month1 = Jan;
+    MONTHS month2 = Feb;
+    cout<<"Enum Example: "<<month1<<endl;
+    cout<<"Enum Example: "<<month2<<endl;
     return 0;
 }
