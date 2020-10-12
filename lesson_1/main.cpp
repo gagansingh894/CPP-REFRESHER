@@ -12,5 +12,7 @@ int main() {
     cout<<"The size of float is: "<<sizeof(float)<<endl;
     cout<<"The size of short is: "<<sizeof(short)<<endl;
     cout<<"The size of character is: "<<sizeof(char)<<endl;
+    cout<<"The size of long is: "<<sizeof(long)<<endl;
+    cout<<"The size of bool is: "<<sizeof(bool)<<endl;
     return 0;
 }
