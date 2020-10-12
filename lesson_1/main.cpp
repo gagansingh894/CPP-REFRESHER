@@ -1,7 +1,34 @@
 #include <iostream>
 #include <iomanip>
-
+#include <fstream>
+#include <string>
 using namespace std;
+
+void fileIO() {
+
+    string line;
+
+    // write to fiie
+    ofstream myfileI ("input.txt", ios::app);
+    if (myfileI.is_open())
+    {
+        myfileI << "\nI am adding a line."<<endl;
+        myfileI << "I am adding another line."<<endl;
+        myfileI.close();
+    }
+    else cout << "unable to open file";
+
+    ifstream myfileO ("input.txt");
+    if (myfileO.is_open())
+    {
+        while (getline(myfileO, line))
+        {
+            cout << line << endl;
+        }
+        myfileO.close();
+    }
+    else cout <<"unable to open file";
+}
 
 int main() {
     cout<<"Hello, World!"<<endl;
@@ -29,5 +56,9 @@ int main() {
 
     // iomanip example
     cout<<"Text 1"<<setw(10)<<"Text 2"<<endl;
+
+    // Write to file and read
+    fileIO();
     return 0;
 }
+
