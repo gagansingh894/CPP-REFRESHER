@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -25,5 +26,8 @@ int main() {
     MONTHS month2 = Feb;
     cout<<"Enum Example: "<<month1<<endl;
     cout<<"Enum Example: "<<month2<<endl;
+
+    // iomanip example
+    cout<<"Text 1"<<setw(10)<<"Text 2"<<endl;
     return 0;
 }
